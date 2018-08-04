@@ -1,0 +1,42 @@
+CREATE TABLE [stg].[IMC_NYJSSBDB]
+(
+[ETL__ID] [bigint] NOT NULL IDENTITY(1, 1),
+[ETL__CreatedDate] [datetime] NOT NULL,
+[ETL__Source] [nvarchar] (255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+[ETL__DeltaHashKey] [binary] (32) NULL,
+[RECIPIENT_ID] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Email] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Opt_In_Date] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Opted_Out] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Opt_In_Details] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Email_Type] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Opted_Out_Date] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Opt_Out_Details] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Address_City] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Address_State] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Address_Street] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Address_Street_2] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Address_Zip_Code] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Archtics_Account_Number] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Birthday] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[CRM_GUID] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Company_Name] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[First_Name] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Full_Name] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Last_Click] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Last_Name] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Last_Open] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Last_Send] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Primary_Phone_Number] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[SSB_ID] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Salesperson] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Salesperson_Email] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Salesperson_Phone] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Send_Time_Optimiziation] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Sub_Event_Invites] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Sub_Newsletter] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+[Sub_Promotions_Offers] [nvarchar] (max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+)
+GO
+ALTER TABLE [stg].[IMC_NYJSSBDB] ADD CONSTRAINT [PK__IMC_NYJS__C4EA24458934ECDE] PRIMARY KEY CLUSTERED  ([ETL__ID])
+GO

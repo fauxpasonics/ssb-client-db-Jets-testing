@@ -1,0 +1,3 @@
+CREATE SCHEMA [zzzarc]
+AUTHORIZATION [dbo]
+GO

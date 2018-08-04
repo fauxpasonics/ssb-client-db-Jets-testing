@@ -1,0 +1,13 @@
+CREATE SCHEMA [ods]
+AUTHORIZATION [dbo]
+GO
+GRANT DELETE ON SCHEMA:: [ods] TO [svcssbrp]
+GO
+GRANT EXECUTE ON SCHEMA:: [ods] TO [svcssbrp]
+GO
+GRANT INSERT ON SCHEMA:: [ods] TO [svcssbrp]
+GO
+GRANT SELECT ON SCHEMA:: [ods] TO [svcssbrp]
+GO
+GRANT UPDATE ON SCHEMA:: [ods] TO [svcssbrp]
+GO
